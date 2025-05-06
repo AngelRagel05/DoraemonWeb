@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doreamon Web</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página de Doraemon</title>
+    <!-- Bootstrap 5.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
+    <!-- Header / Navbar -->
     <header>
-        <h1>Doreamon Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Doraemon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#episodios">Episodios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#juegos">Juegos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
 
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+        <section id="inicio">
+            <h1 class="text-center">¡Bienvenido al mundo de Doraemon!</h1>
+            <p class="lead text-center">Explora todo sobre tu gato cósmico favorito.</p>
+        </section>
+
+        <section id="personajes" class="my-5">
+            <h2>Personajes</h2>
+            <!-- Aquí puedes meter tarjetas con Bootstrap para mostrar a Doraemon, Nobita, Shizuka, etc. -->
+        </section>
+
+        <section id="episodios" class="my-5">
+            <h2>Episodios</h2>
+            <!-- Lista o carrusel con episodios destacados -->
+        </section>
+
+        <section id="juegos" class="my-5">
+            <h2>Juegos</h2>
+            <!-- Juegos o enlaces a minijuegos -->
+        </section>
     </main>
-    <footer>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Fanpage de Doraemon. Proyecto educativo. Todos los derechos a sus respectivos dueños.</p>
     </footer>
+
+    <!-- Bootstrap 5.0 JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
