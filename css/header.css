@@ -1,6 +1,5 @@
-@import url(css.generalStyle.css);
+@import url(css/generalStyle.css);
 
 header {
     background-color: var(--celeste);
-    
 }
