@@ -1,5 +1,6 @@
 @import url(css.generalStyle.css);
 
-:root {
+header {
+    background-color: var(--celeste);
     
 }
