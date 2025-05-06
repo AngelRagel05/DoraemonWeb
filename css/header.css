@@ -1,5 +1,10 @@
 :root {
-    
+    --azul: #4F46E5;
+    --purpura: #A855F7;
+    --rosa: #EC4899;
+    --fucsia: #F43F5E;
+    --celeste: #22D3EE;
+    --negro: #000000;
 }
 
 header {
