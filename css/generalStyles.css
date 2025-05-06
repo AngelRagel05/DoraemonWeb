@@ -1,8 +1,8 @@
 :root {
-    --color-azul-doraemon: #009FE3;
-    --color-blanco: #ffffff;
-    --color-amarillo: #FFD700;
-    --color-rojo: #E60012;
-    --color-gris-claro: #f4f4f4;
-    --color-azul-oscuro: #003E6B;
+    --azul: #4F46E5;
+    --purpura: #A855F7;
+    --rosa: #EC4899;
+    --fucsia: #F43F5E;
+    --celeste: #22D3EE;
+    --negro: #000000;
 }
