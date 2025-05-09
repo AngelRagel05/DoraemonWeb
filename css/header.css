@@ -6,6 +6,10 @@ header {
     font-weight: bold;
 }
 
+li {
+    color: var(--fucsia);
+}
+
 #Doraemon_Nav {
     height: 150px;
     width: auto;
