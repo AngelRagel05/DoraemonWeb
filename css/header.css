@@ -25,12 +25,12 @@ nav img:hover {
 /* MENU NAV */
 
 /* Estilo para que el menu se agrande */
-.nav-item {
+nav li {
     color: var(--negro);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.nav-item:hover {
+nav li:hover {
     color: var(--amarillo-doraemon);
     transform: scale(1.2);
 }
