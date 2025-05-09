@@ -3,3 +3,8 @@
 header {
     background-color: var(--celeste);
 }
+
+#Doraemon_Nav {
+    height: 150px;
+    width: auto;
+}
