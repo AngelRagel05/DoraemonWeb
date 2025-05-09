@@ -6,11 +6,32 @@ header {
     font-weight: bold;
 }
 
-li {
-    color: var(--fucsia);
+/* ESTILO PARA DORAEMON */
+
+/* Zoom en el Hover */
+nav img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+nav img:hover {
+    transform: scale(1.2);
 }
 
+/* Tamaño img */
 #Doraemon_Nav {
     height: 150px;
     width: auto;
 }
+
+/* MENU NAV */
+
+/* Estilo para que el menu se agrande */
+.nav-item {
+    color: var(--negro);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-item:hover {
+    color: var(--amarillo-doraemon);
+    transform: scale(1.2);
+}
+
