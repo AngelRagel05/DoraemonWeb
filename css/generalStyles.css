@@ -1,12 +1,11 @@
 :root {
-    --azul: #4F46E5;
-    --purpura: #A855F7;
-    --rosa: #EC4899;
-    --fucsia: #F43F5E;
-    --celeste: #22D3EE;
+    --azul-doraemon: #2C8EFF;
+    --rojo-doraemon: #FF3B3B;
+    --amarillo-doraemon: #FFD500;
     --negro: #000000;
     --blanco-texto: #f0f8ff;
 }
+
 
 /* Estilos predeterminados body */
 body {
