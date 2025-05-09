@@ -1,13 +1,6 @@
 @import url(css/generalStyle.css);
 
-/* Estilos predeterminados body */
-body {
-    color: var(--blanco-texto);
-    background: url(../assets/img/Background/Fondo.png);
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-}
+
 
 /* Tamaño imágenes carrusel */
 #img_carrusel {

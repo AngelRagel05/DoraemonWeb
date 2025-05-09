@@ -8,3 +8,11 @@
     --blanco-texto: #f0f8ff;
 }
 
+/* Estilos predeterminados body */
+body {
+    color: var(--blanco-texto);
+    background: url(../assets/img/Background/Fondo.png);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
