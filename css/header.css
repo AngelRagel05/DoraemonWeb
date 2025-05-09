@@ -2,6 +2,8 @@
 
 header {
     background-color: var(--celeste);
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #Doraemon_Nav {
