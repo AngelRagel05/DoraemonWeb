@@ -2,15 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
 
+/* ! Colores */
 :root {
+
+    /* Paleta de Colores */
     --azul-doraemon: #2C8EFF;
     --azul-doraemonDegradado: #068af759;
     --rojo-doraemon: #FF3B3B;
     --amarillo-doraemon: #FFD500;
     --negro: #000000;
     --blanco-texto: #f0f8ff;
+
+    /* Colores añadidos */
+    --rosa-shisuka: #ffc8dd;
 }
 
+.bg-pink-shisuka {
+    background-color: var(--rosa-shisuka) !important; /* He necesitado poner el imporatant si no me lo coje*/
+}
+
+/* ! Fuentes */
 .font-Baloo {
     font-family: 'Baloo 2', sans-serif;
 }
@@ -40,10 +51,19 @@ body {
 
 /* ! Montes */
 
-.card-img-big-dimension {
+.card-img-lg-dimension {
+    display: block;
+    /* Evita que las imagenes se deformen */
+    object-fit: contain;
+    max-height: 500px;
+    max-width: 100%;
+    width: auto;
+    margin: 0;
+    padding: 1em;
+}
+.card-img-md-dimension {
     display: block;
     object-fit: contain;
-    /* Evita que las imagenes se deformen */
     max-height: 300px;
     max-width: 100%;
     width: auto;
