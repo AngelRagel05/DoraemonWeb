@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes - Doraemon</title>
 
-    <link rel="stylesheet" href="css/personajes.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/generalStyles.css">
+    <link rel="stylesheet" href="../css/personajes.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="js/bootstrap.bundle.js" defer></script>
 </head>
 
 <body>
-    <!-- Header / Navbar -->
+    <!-- ! Header / Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bolder" href="#inicio"><img src="assets/img/Nav/Doraemon_Nav.png"
+                <a class="navbar-brand fw-bolder" href="#inicio"><img src="../assets/img/Nav/Doraemon_Nav.png"
                         alt="Doraemon_Nav" id="Doraemon_Nav"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -26,16 +27,119 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/personajes.html">Personajes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/episodios.html">Episodios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/juegos.html">Juegos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="episodios.html">Episodios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <!-- !  Main  -->
+        <div class="container py-4">
+            <h1 class="h1-font-Baloo">Personajes Principales de Doraemon</h1>
+
+            <!-- ? Personajes Principales -->
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+                <!-- ! Doraemon -->
+                <div class="col-12">
+                    <div class="card h-100 shadow-lg rounded-4">
+                        <div
+                            class="card-header bg-primary text-white text-center fw-bold rounded-top-4 border-bottom-0">
+                            Doraemon
+                        </div>
+                        <img src="../assets/img/personaje/Doraemon_P.svg" class="card-img-big-dimension" alt="Doraemon">
+                        <div class="card-body text-center">
+                            <p class="card-text">El gato cósmico del futuro con un bolsillo mágico lleno de
+                                inventos.</p>
+                        </div>
+                        <div class="card-footer text-center bg-light rounded-bottom-4">
+                            <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! Nobita -->
+                <div class="col-12">
+                    <div class="card h-100 shadow-lg rounded-4">
+                        <div class="card-header bg-warning text-dark text-center fw-bold rounded-top-4 border-bottom-0">
+                            Nobita
+                        </div>
+                        <img src="../assets/img/personaje/Nobita_P.svg" class="card-img-big-dimension" alt="Nobita">
+                        <div class="card-body text-center">
+                            <p class="card-text">Un niño perezoso pero de buen corazón, siempre metido en
+                                líos.</p>
+                        </div>
+                        <div class="card-footer text-center bg-light rounded-bottom-4">
+                            <a href="#" class="btn btn-outline-warning btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ? Personajes Secundarios -->
+            <h2 class="h1-font-Baloo">Personajes Secundarios</h2>
+            <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4">
+                <!-- ! Shizuka -->
+                <div class="col">
+                    <div class="card h-100 shadow-lg rounded-4">
+                        <div class="card-header bg-pink text-white text-center fw-bold">
+                            Shizuka
+                        </div>
+                        <img src="../assets/img/personaje/Shisuka_P.svg" class="card-img-top" alt="Shizuka">
+                        <div class="card-body text-center">
+                            <p class="card-text">La amiga inteligente y amable de Nobita, apasionada por el
+                                violín.</p>
+                        </div>
+                        <div class="card-footer text-center bg-light rounded-bottom-4">
+                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! Suneo -->
+                <div class="col">
+                    <div class="card h-100 shadow-lg rounded-4">
+                        <div
+                            class="card-header bg-success text-white text-center fw-bold rounded-top-4 border-bottom-0">
+                            Suneo
+                        </div>
+                        <img src="https://static.wikia.nocookie.net/doraemon/images/5/5b/Suneo_Honekawa.png"
+                            class="card-img-top" alt="Suneo">
+                        <div class="card-body text-center">
+                            <p class="card-text">Presumido y algo manipulador, siempre quiere lucirse frente
+                                a los demás.</p>
+                        </div>
+                        <div class="card-footer text-center bg-light ">
+                            <a href="#" class="btn btn-outline-success btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gigante -->
+                <div class="col">
+                    <div class="card h-100 shadow-lg rounded-4">
+                        <div class="card-header bg-danger text-white text-center fw-bold">
+                            Gigante
+                        </div>
+                        <img src="https://static.wikia.nocookie.net/doraemon/images/4/48/Takeshi_Gouda.png"
+                            class="card-img-top" alt="Gigante">
+                        <div class="card-body text-center">
+                            <p class="card-text">El matón del grupo con una voz horrible pero un lado oculto
+                                amable.</p>
+                        </div>
+                        <div class="card-footer text-center bg-light">
+                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
 </body>
 
 </html>
