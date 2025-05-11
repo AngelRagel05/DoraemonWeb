@@ -1,5 +1,4 @@
 /* ? COLLORES Y FUENTES */
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
 
 /* ! Colores */
@@ -13,8 +12,12 @@
     --negro: #000000;
     --blanco-texto: #f0f8ff;
 
+    /* Footer */
+    --gris-footer: #212429;
+
     /* Colores añadidos */
     --rosa-shisuka: #ffc8dd;
+    
 }
 
 .bg-pink-shisuka {
