@@ -3,7 +3,6 @@
 
 /* ! Colores */
 :root {
-
     /* Paleta de Colores */
     --azul-doraemon: #2C8EFF;
     --fondo-tarjetas: #ffffff99;
@@ -17,8 +16,7 @@
     --gris-footer: #212429;
 
     /* Colores añadidos */
-    --rosa-shisuka: #ffc8dd;
-    
+    --rosa-shisuka: #ffc8dd; 
 }
 
 .bg-pink-shisuka {
