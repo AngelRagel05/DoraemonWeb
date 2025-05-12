@@ -42,7 +42,7 @@
 }
 
 
-/* Estilos predeterminados body */
+/* ? ESTILOS PREDETERMINADO DEL BODY */
 body {
     color: var(--blanco-texto);
     background: url(../assets/img/Background/Fondo.png);
@@ -53,7 +53,6 @@ body {
 
 
 /* ! Montes */
-
 .card-img-lg-dimension {
     display: block;
     /* Evita que las imagenes se deformen */
