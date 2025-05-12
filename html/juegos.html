@@ -47,7 +47,33 @@
     </header>
     <!-- !  Main  -->
     <main>
-        
+        <!--! Acordeon de juegos -->
+        <section id="accodationSection" class="py-5">
+            <div class="container">
+                <h2 class="mb-3">Juegos de Doraemon</h2>
+                <div class="accordion" id="gameAccordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="DorameonWii">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Doraemon
+                                Wii: Himitsu Douguou Ketteisen!
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="DoremeonWii"
+                            data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body d-flex flex-column flex-md-row align-items-center">
+                                <img src="../assets/img/juegos/doraemon-wii.svg" class="img-fluid rounded mb-3 mb-md-0 me-md-3"
+                                    alt="La Carrera Cósmica" style="max-width:200px;">
+                                <p class="mb-0">
+                                    Pilota tu cohete y compite contra Nobita en una carrera intergaláctica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <!-- ! Footer -->
