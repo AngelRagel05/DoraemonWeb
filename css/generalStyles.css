@@ -10,7 +10,7 @@
     --rojo-doraemon: #FF3B3B;
     --amarillo-doraemon: #FFD500;
     --negro: #000000;
-    --blanco-texto: #f0f8ff;
+    --blanco-texto: #363739;
 
     /* Footer */
     --gris-footer: #212429;
@@ -45,7 +45,7 @@
 /* ? ESTILOS PREDETERMINADO DEL BODY */
 body {
     color: var(--blanco-texto);
-    background: url(../assets/img/Background/Fondo.png);
+    background: url(../assets/img/Background/Fondo2.png);
     margin: 0;
     padding: 0;
     background-size: cover;

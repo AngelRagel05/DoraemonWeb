@@ -7,8 +7,8 @@
 }
 
 /* Estilo para la sección de Sinopsis */
-#sinopsis-box {
-    background-color: var(--azul-doraemonDegradado);
+#sinopsis-box {  
+    background-color: #ffffff99;
     border-radius: 1rem;
     padding: 2rem;
     color: var(--blanco-texto);
