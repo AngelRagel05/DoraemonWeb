@@ -7,8 +7,8 @@
 }
 
 /* Estilo para la sección de Sinopsis */
-#sinopsis-box {
-    background-color: var(--azul-doraemonDegradado);
+#sinopsis-box {  
+    background-color: var(--fondo-tarjetas);
     border-radius: 1rem;
     padding: 2rem;
     color: var(--blanco-texto);
@@ -24,7 +24,7 @@
 
 /* Estilo para la sección de Curiosidades */
 #curiosidades-box {
-    background-color: var(--azul-doraemonDegradado);
+    background-color: var(--fondo-tarjetas);
     border-radius: 1rem;
     padding: 2rem;
     color: var(--blanco-texto);
