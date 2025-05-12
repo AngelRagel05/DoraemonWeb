@@ -1,7 +1,5 @@
 @import url(css/generalStyle.css);
 
-
-
 /* Tamaño imágenes carrusel */
 #img_carrusel {
     height: auto;
@@ -16,7 +14,7 @@
 }
 
 /* Estilo para la sección de Sinopsis */
-#sinopsis-box {  
+#sinopsis-box {
     background-color: var(--fondo-tarjetas);
     border-radius: 1rem;
     padding: 2rem;
@@ -66,14 +64,12 @@
 }
 
 /* Fondo blanco sinopsis peliculas */
- .fondo-pelicula {
+.fondo-pelicula {
     background-color: var(--fondo-pelicula);
     border-radius: 1rem;
     padding: 2rem;
     color: var(--blanco-texto);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
- }
+}
 
- #pelicula {
-
- }
+#pelicula {}

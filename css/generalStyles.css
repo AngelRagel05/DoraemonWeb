@@ -5,10 +5,10 @@
 :root {
     /* Paleta de Colores */
     --azul-doraemon: #2C8EFF;
-    --fondo-tarjetas: #ffffff99;
+    --fondo-tarjetas: #ffffffba;
     --fondo-pelicula: #ffffff57;
     --rojo-doraemon: #FF3B3B;
-    --amarillo-doraemon: #FFD500;
+    --amarillo-doraemon: #FFF200;
     --negro: #000000;
     --blanco-texto: #363739;
 
@@ -26,6 +26,10 @@
 /* ! Fuentes */
 .font-Baloo {
     font-family: 'Baloo 2', sans-serif;
+}
+
+.font-ComicNeue {
+    font-family: 'Comic Neue', sans-serif;
 }
 
 .h1-font-Baloo {
