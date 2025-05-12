@@ -6,6 +6,13 @@
     width: auto;
 }
 
+/* Tamaño imágenes peliculas */
+#img-peliculas {
+    height: auto;
+    width: auto;
+    border: rgb(255, 255, 255);
+}
+
 /* Estilo para la sección de Sinopsis */
 #sinopsis-box {  
     background-color: var(--fondo-tarjetas);
@@ -63,4 +70,8 @@
     padding: 2rem;
     color: var(--blanco-texto);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+ }
+
+ #pelicula {
+
  }
