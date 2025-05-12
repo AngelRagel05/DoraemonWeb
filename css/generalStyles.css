@@ -7,6 +7,7 @@
     /* Paleta de Colores */
     --azul-doraemon: #2C8EFF;
     --fondo-tarjetas: #ffffff99;
+    --fondo-pelicula: #ffffff57;
     --rojo-doraemon: #FF3B3B;
     --amarillo-doraemon: #FFD500;
     --negro: #000000;
@@ -49,7 +50,7 @@ body {
     margin: 0;
     padding: 0;
     background-size: cover;
-    min-height: 100vh;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 
