@@ -55,3 +55,12 @@
     color: var(--rojo-doraemon);
     font-size: 1rem;
 }
+
+/* Fondo blanco sinopsis peliculas */
+ .fondo-pelicula {
+    background-color: var(--fondo-pelicula);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: var(--blanco-texto);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+ }
