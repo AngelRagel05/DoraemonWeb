@@ -18,7 +18,11 @@ nav img:hover {
 
 /* Tamaño img */
 #Doraemon_Nav {
-    height: 150px;
+    z-index: 5;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    height: 110%;
     width: auto;
 }
 
