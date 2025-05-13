@@ -1,7 +1,7 @@
 @import url(css/generalStyle.css);
 
 header {
-    background-color: var(--azul-doraemon);
+    background-color: var(--gris-footer);
     font-size: x-large;
     font-weight: bold;
 }
@@ -30,7 +30,7 @@ nav img:hover {
 
 /* Estilo para que el menu se agrande */
 nav li {
-    color: var(--negro);
+    color: white !important; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
