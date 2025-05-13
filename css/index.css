@@ -73,14 +73,8 @@
 }
 
 #peliculas {
-    margin: 2rem;
+    margin-bottom: 2em;
 }
 
-@media screen and (max-width: 768px) {
-    #peliculas {
-        background-color: brown;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
+
