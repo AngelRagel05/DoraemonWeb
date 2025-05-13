@@ -4,6 +4,7 @@ header {
     background-color: var(--gris-footer);
     font-size: x-large;
     font-weight: bold;
+    color: white !important;
 }
 
 /* ESTILO PARA DORAEMON */
@@ -30,7 +31,6 @@ nav img:hover {
 
 /* Estilo para que el menu se agrande */
 nav li {
-    color: white !important; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -39,3 +39,6 @@ nav li:hover {
     transform: scale(1.2);
 }
 
+nav .nav-link {
+    color: white !important;
+}

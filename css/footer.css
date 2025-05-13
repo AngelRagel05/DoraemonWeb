@@ -1,4 +1,8 @@
 /* ! Footer styles */
+footer .padding-footer {
+    padding: 2em;
+}
+
 .footer-cielo {
     position: relative;
     background: var(--gris-footer);
