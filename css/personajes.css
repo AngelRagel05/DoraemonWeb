@@ -6,18 +6,20 @@ Ancho total: 640 + (40 * 4) = 800px
 Ancho por defecto: 800 / 5 = 160px
 */
 
+body {
+	background-color: #ffffff82 !important;
+}
+
 .accordian {
-	width: 800px;
-	height: 320px;
+	width: 1000px;
+	height: auto;
 	overflow: hidden;
 	margin: 100px auto;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+		background-color: #70b2ce82;
 }
 
-/* Hack para evitar parpadeo de los <li> al hacer hover */
-.accordian ul {
-	width: 2000px;
-}
+
 
 /* Elementos del acordeón */
 .accordian li {
@@ -25,15 +27,16 @@ Ancho por defecto: 800 / 5 = 160px
 	display: block;
 	width: 100px;
 	/* Ancho por defecto */
-	float: left;
-	border-left: 1px solid #888;
-	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.288);
+	float: inline-start;
+	border-left: 1px solid #ffffff;
+	box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.288);
 	transition: all 0.5s;
+
 }
 
 /* Al hacer hover sobre el UL, todas se contraen */
 .accordian ul:hover li {
-	width: 40px;
+	width: 30px;
 }
 
 /* Al hacer hover sobre un LI, ese se expande */
@@ -46,7 +49,8 @@ Ancho por defecto: 800 / 5 = 160px
 	display: block;
 	width: 640px;
 	height: 320px;
-	background-color: #888888a6;
+	background-color: #ffffff00;
+	
 }
 
 /* Título sobre la imagen */
