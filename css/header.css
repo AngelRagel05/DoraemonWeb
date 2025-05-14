@@ -46,7 +46,7 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-    color: var(--amarillo-doraemon) !important;
+    color: var(--azul-doraemon) !important;
 }
 
 nav .nav-link::after {
@@ -56,7 +56,7 @@ nav .nav-link::after {
     left: 10%;
     width: 0;
     height: 2px;
-    background-color: var(--amarillo-doraemon);
+    background-color: var(---azul-doraemon);
     transition: width 0.3s;
 }
 

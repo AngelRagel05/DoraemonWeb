@@ -5,10 +5,12 @@
 :root {
     /* Paleta de Colores */
     --azul-doraemon: #2C8EFF;
-    --fondo-tarjetas: #ffffffba;
-    --fondo-pelicula: #ffffff57;
     --rojo-doraemon: #FF3B3B;
     --amarillo-doraemon: #FFF200;
+
+    --fondo-tarjetas: #ffffffba;
+    --fondo-pelicula: #ffffff57;
+    
     --negro: #000000;
     --blanco-texto: #363739;
 
