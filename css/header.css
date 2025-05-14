@@ -48,3 +48,18 @@ nav .nav-link {
 nav .nav-link:hover {
     color: var(--amarillo-doraemon) !important;
 }
+
+nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 0;
+    height: 2px;
+    background-color: var(--amarillo-doraemon);
+    transition: width 0.3s;
+}
+
+nav .nav-link:hover::after {
+    width: 80%;
+}
