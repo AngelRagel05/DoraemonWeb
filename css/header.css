@@ -43,6 +43,7 @@ nav .nav-link {
     color: white !important;
     position: relative;
     transition: color 0.3s;
+    font-family: 'Comic Neue', cursive;
 }
 
 nav .nav-link:hover {
@@ -62,4 +63,13 @@ nav .nav-link::after {
 
 nav .nav-link:hover::after {
     width: 80%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    align-items: center;
 }
