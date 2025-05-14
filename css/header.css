@@ -56,7 +56,7 @@ nav .nav-link::after {
     left: 10%;
     width: 0;
     height: 2px;
-    background-color: var(---azul-doraemon);
+    background-color: var(--azul-doraemon);
     transition: width 0.3s;
 }
 
