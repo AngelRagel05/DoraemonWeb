@@ -7,7 +7,7 @@ header {
     color: white !important;
 }
 
-/* ESTILO PARA DORAEMON */
+/* ESTILO PARA CASCABEL */
 
 /* Zoom en el Hover */
 nav img {
@@ -41,4 +41,10 @@ nav li:hover {
 
 nav .nav-link {
     color: white !important;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav .nav-link:hover {
+    color: var(--amarillo-doraemon) !important;
 }
