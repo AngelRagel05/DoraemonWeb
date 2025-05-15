@@ -1,1 +1,5 @@
 @import url(css/generalStyle.css);
+
+.hover-effect:hover {
+  background-color: #dddddd;
+}
