@@ -6,12 +6,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    border-bottom: white 3px solid;
 }
 
 /*! Imagen principal */
 .contenedor-DoraemonGamer {
     overflow: hidden;
     transition: height 0.2s ease-out;
+    border-bottom: white 3px solid;
 
     img {
         width: 100%;
