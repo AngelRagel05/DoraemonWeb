@@ -5,7 +5,8 @@
 Genral Styles podemos encontral el tamño de todo deberiamos ir utilizando para que olga se de cuenta que con tus herramientas y con la mias podemos crear coasa en conjunto 
 
 ## Header
-Hay que darle una vueltecita parecido ha esto -->// https://doraemon.lukinternacional.com/es/ Muy guapa esta 
+// https://doraemon.lukinternacional.com/es//
+/*TODO Cambiar a sty*/
 
 ## Footer 
 Cambiar el footer? Esta muy soso 
