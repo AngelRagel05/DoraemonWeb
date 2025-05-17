@@ -16,9 +16,13 @@
 
     /* Footer */
     --gris-footer: #212429;
-
+    --blanco-footer: #ffffff;
     /* Colores añadidos */
     --rosa-shisuka: #ffc8dd; 
+    --dorado-small-juegos: #f2ce3a;
+    /* Colores para diferentes elementos */
+
+    
 }
 
 .bg-pink-shisuka {

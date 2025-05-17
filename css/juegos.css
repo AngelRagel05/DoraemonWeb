@@ -1,19 +1,19 @@
 @import url(css/generalStyle.css);
 
-/*TODO cambiar esto al heder una vez angel compruebe*/
+/*TODO cambiar esto al header una vez angel compruebe*/
 header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    border-bottom: white 3px solid;
+    border-bottom: var(--blanco-footer) 3px solid;
 }
 
 /*! Imagen principal */
 .contenedor-DoraemonGamer {
     overflow: hidden;
     transition: height 0.2s ease-out;
-    border-bottom: white 3px solid;
+    border-bottom: var(--blanco-footer) 3px solid;
 
     img {
         width: 100%;
@@ -57,4 +57,18 @@ header {
     flex: 2;
     cursor: pointer;
     border-radius: 8px;
+}
+
+/*! DLC Story Season */
+.color-small{
+    color:var(--dorado-small-juegos);
+}
+
+.w-corazon{
+    width: 15px;
+    height: auto;
+    align-items: center;
+}
+.w-corazon:hover{
+    cursor: pointer;
 }
