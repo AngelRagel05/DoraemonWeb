@@ -68,6 +68,7 @@ header {
     cursor: pointer;
     transition: transform 0.2s ease;
     border: 2px solid transparent;
+
     p{
         margin-bottom: 5px;
         font-size: 12px;
@@ -81,6 +82,11 @@ header {
 .mini-card.active {
     border-color: var(--bs-warning);
     /* o un color que estés usando, como #ffc107 */
+}
+
+.mini-card-img{
+    width: 200px;
+    height: 148px;
 }
 
 .w-corazon {
