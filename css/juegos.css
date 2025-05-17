@@ -60,15 +60,35 @@ header {
 }
 
 /*! DLC Story Season */
-.color-small{
-    color:var(--dorado-small-juegos);
+.color-small {
+    color: var(--dorado-small-juegos);
 }
 
-.w-corazon{
+.mini-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 2px solid transparent;
+    p{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+.mini-card:hover {
+    transform: scale(1.01);
+}
+
+.mini-card.active {
+    border-color: var(--bs-warning);
+    /* o un color que estés usando, como #ffc107 */
+}
+
+.w-corazon {
     width: 15px;
     height: auto;
-    align-items: center;
+    cursor: pointer;
 }
-.w-corazon:hover{
+
+.w-corazon:hover {
     cursor: pointer;
 }
