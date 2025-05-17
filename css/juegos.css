@@ -89,6 +89,14 @@ header {
     height: 148px;
 }
 
+.bg-mini-card {
+    background-color: var(--gris-footer) ;
+    color: var(--blanco-footer);
+    padding: 4px 8px;
+    border-top-right-radius: 6px;
+    margin-bottom: 8px;
+}
+
 .w-corazon {
     width: 15px;
     height: auto;
