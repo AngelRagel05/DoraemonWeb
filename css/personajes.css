@@ -1,42 +1,55 @@
-@import url(css/generalStyle.css);
-
+@import url(css/generalStyles.css);
 /*! ============================= */
 /*! 🖼️ Imagenes Principales */
 /*! ============================= */
-
 .image_title {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 640px;
-	background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 640px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .image_title a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 20px;
-	font-size: 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
 }
+/*! ============================= */
+/*!  Bucador de personajes */
+/*! ============================= */
+#searchInput {
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid var(--azul-doraemon);
+}
+
 
 /*! ============================= */
 /*! 🎨 Tabla de Personajes */
 /*! ============================= */
-
 .table-responsive {
     border-radius: 16px;
     overflow: hidden;
 }
 
 .table thead {
-    background-color: var(--celeste-suave, #bde0fe); /* Usa variable si la tienes */
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1rem;
 }
 
-.table td, .table th {
+.table thead th {
+    background-color: var(--azul-doraemon);
+    color: white;
+}
+
+.table td,
+.table th {
     vertical-align: middle;
     text-align: center;
     font-family: 'Rubik', sans-serif;
@@ -44,8 +57,9 @@
     padding: 0.75rem;
 }
 
-.table tbody tr:hover {
-    background-color: rgba(0, 123, 255, 0.05);
+.table-hover tbody tr:hover td {
+    background-color: rgb(251, 255, 7) !important;
+    color: black !important;
     transition: background-color 0.3s ease;
 }
 
@@ -57,5 +71,5 @@
 
 .table img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

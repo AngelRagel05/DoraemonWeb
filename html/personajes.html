@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="../css/personajes.css">
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.bundle.js" defer></script>
+    <script src="../js/bootstrap.bundle.js" defer></script>
+    <script src="../js/buscarPersonajes.js" defer></script>
 
     <!-- Fuentes Textos -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -151,9 +152,14 @@
             <div class="container my-5">
                 <h2 class="h1-font-Baloo text-center mb-4">Personajes Secundarios de Doraemon</h2>
 
+                <!-- Bucador Dinámico -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar personajes..."
+                        onkeyup="filtrarTabla()">
+                </div>
                 <div class="table-responsive rounded-4 shadow">
                     <table class="table table-hover table-bordered align-middle mb-0">
-                        <thead class="table-info text-center">
+                        <thead class="text-center">
                             <tr>
                                 <th>Nombre</th>
                                 <th>Descripción</th>
@@ -166,7 +172,7 @@
                                 <td>Dorami</td>
                                 <td>Hermana menor de Doraemon, más inteligente y responsable.</td>
                                 <td>1973</td>
-                                <td class="text-center">
+                                <td class=" text-info text-center bg-personajes">
                                     <img src="../assets/img/personajes/Dorami-P.webp" alt="Dorami" class="img-thumbnail"
                                         style="max-height: 70px;">
                                 </td>
@@ -176,8 +182,8 @@
                                 <td>Hermana de Gigante, aspira a ser mangaka.</td>
                                 <td>1973</td>
                                 <td class="text-center">
-                                    <img src="../assets/img/personajes/Jaiko-Goda-P.webp" alt="Jaiko Goda" class="img-thumbnail"
-                                        style="max-height: 70px;">
+                                    <img src="../assets/img/personajes/Jaiko-Goda-P.webp" alt="Jaiko Goda"
+                                        class="img-thumbnail" style="max-height: 70px;">
                                 </td>
                             </tr>
                             <tr>
@@ -185,8 +191,8 @@
                                 <td>Compañero de clase de Nobita, inteligente y amable.</td>
                                 <td>1973</td>
                                 <td class="text-center">
-                                    <img src="../assets/img/personajes/Hidetoshi-Dekisugi-P.webp" alt="Hidetoshi Dekisugi"
-                                        class="img-thumbnail" style="max-height: 70px;">
+                                    <img src="../assets/img/personajes/Hidetoshi-Dekisugi-P.webp"
+                                        alt="Hidetoshi Dekisugi" class="img-thumbnail" style="max-height: 70px;">
                                 </td>
                             </tr>
                             <tr>
@@ -248,8 +254,8 @@
                                 <td>Gata blanca que es el interés amoroso de Doraemon.</td>
                                 <td>1973</td>
                                 <td class="text-center">
-                                    <img src="../assets/img/personajes/Mii-chan-P.webp" alt="Mii-chan" class="img-thumbnail"
-                                        style="max-height: 70px;">
+                                    <img src="../assets/img/personajes/Mii-chan-P.webp" alt="Mii-chan"
+                                        class="img-thumbnail" style="max-height: 70px;">
                                 </td>
                             </tr>
                         </tbody>
