@@ -1,11 +1,20 @@
 'use strict';
-// Función para buscar personajes por nombre        
 function filtrarTabla() {
-    let input = document.getElementById("searchInput").ariaValueMax.toLowerCase;
-    let filas = document.querySelectorAll("table tbody tr");
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const filas = document.querySelectorAll("table tbody tr");
 
     filas.forEach(fila => {
-        let texto = fila.innerText.toLowerCase();
-        fila.style.display = texto.includes(input) ? "" : "none";
+        const celdas = fila.querySelectorAll("td");
+        let textoFila = "";
+
+        // Extrae el texto de todas las celdas (excepto las que contienen solo imagen)
+        celdas.forEach(td => {
+            // Ignorar celdas que contienen solo una imagen
+            if (!td.querySelector("img")) {
+                textoFila += td.textContent.toLowerCase() + " ";
+            }
+        });
+
+        fila.style.display = textoFila.includes(input) ? "" : "none";
     });
 }
