@@ -25,7 +25,7 @@ const dlcs = [
         titulo: "DORAEMON STORY OF SEASONS:",
         subtitulo: "Friends of the Great Kingdom",
         texto: "Trailer de Fecha de Lanzamiento: 02/11/22",
-        fecha: "16 marzo 2023",
+        fecha: "1 noviembre 2022",
         video: "https://www.youtube.com/embed/gRlGGuWHJvE"
     }
 ];
