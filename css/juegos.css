@@ -8,6 +8,66 @@ header {
     z-index: 999;
     border-bottom: var(--blanco-footer) 3px solid;
 }
+/*? Fuentes */
+.card-body h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* antes 1.8rem */
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.card-body h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem; /* antes 1.2rem */
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+
+/* Texto debajo (ej. fecha de lanzamiento) */
+.card-body p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem; /* antes 1rem */
+    color: #444;
+}
+
+/* Mini-cards: título del DLC */
+.mini-card h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem; /* antes 1rem */
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Mini-cards: descripción */
+.mini-card p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem; /* antes 0.9rem */
+    margin-bottom: 0;
+}
+
+/* Mini-cards: fecha */
+.bg-mini-card span.small {
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.85rem; /* antes 0.75rem */
+    color: #f0f0f0;
+}
+/* Título S.O.S */
+.titulo-sos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--bs-info); /* o tu color personalizado */
+    margin-bottom: 0.3rem;
+}
+
+.subtitulo-sos {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+
 
 /*! Imagen principal */
 .contenedor-DoraemonGamer {
@@ -60,18 +120,14 @@ header {
 }
 
 /*! DLC Story Season */
-.color-small {
-    color: var(--dorado-small-juegos);
-}
-
 .mini-card {
     cursor: pointer;
     transition: transform 0.2s ease;
     border: 2px solid transparent;
 
-    p{
+    p {
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -84,17 +140,22 @@ header {
     /* o un color que estés usando, como #ffc107 */
 }
 
-.mini-card-img{
+.mini-card-img {
     width: 200px;
     height: 148px;
 }
 
 .bg-mini-card {
-    background-color: var(--gris-footer) ;
+    background-color: var(--gris-footer);
     color: var(--blanco-footer);
+    align-items: center;
     padding: 4px 8px;
     border-top-right-radius: 6px;
     margin-bottom: 8px;
+}
+
+.bg-mini-card.special-form {
+    border-top-right-radius: 0;
 }
 
 .w-corazon {
