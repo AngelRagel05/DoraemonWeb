@@ -7,10 +7,12 @@
     --azul-doraemon: #2C8EFF;
     --rojo-doraemon: #FF3B3B;
     --amarillo-doraemon: #FFF200;
+    --rosa-doraemon: #FF7EB9;
+
 
     --fondo-tarjetas: #ffffffba;
     --fondo-pelicula: #ffffff57;
-    
+
     --negro: #000000;
     --blanco-texto: #363739;
 
@@ -18,13 +20,14 @@
     --gris-footer: #212429;
     --blanco-footer: #ffffff;
     /* Colores añadidos */
-    --rosa-shisuka: #ffc8dd; 
+    --rosa-shisuka: #ffc8dd;
     --dorado-small-juegos: #f2ce3a;
-    /* Colores para diferentes elementos */   
+    /* Colores para diferentes elementos */
 }
 
 .bg-pink-shisuka {
-    background-color: var(--rosa-shisuka) !important; /* He necesitado poner el imporatant si no me lo coje*/
+    background-color: var(--rosa-shisuka) !important;
+    /* He necesitado poner el imporatant si no me lo coje*/
 }
 
 /* ! Fuentes */
@@ -67,6 +70,7 @@ body {
     margin: 0;
     padding: 1em;
 }
+
 .card-img-md-dimension {
     display: block;
     object-fit: contain;

@@ -46,8 +46,22 @@ nav .nav-link {
     font-family: 'Comic Neue', cursive;
 }
 
-nav .nav-link:hover {
+/* COLORES FIJOS PARA ITEM ACTIVO */
+
+.navbar-nav .nav-item:nth-child(1) .nav-link.active {
     color: var(--azul-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link.active {
+    color: var(--rojo-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link.active {
+    color: var(--amarillo-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link.active {
+    color: var(--rosa-doraemon) !important;
 }
 
 nav .nav-link::after {
@@ -57,17 +71,30 @@ nav .nav-link::after {
     left: 10%;
     width: 0;
     height: 2px;
-    background-color: var(--azul-doraemon);
-    transition: width 0.3s;
+    transition: width 0.3s, background-color 0.3s;
 }
 
-nav .nav-link:hover::after {
+.navbar-nav .nav-item:nth-child(1) .nav-link.active::after {
     width: 80%;
+    background-color: var(--azul-doraemon);
 }
+.navbar-nav .nav-item:nth-child(2) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--rojo-doraemon);
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--amarillo-doraemon);
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--rosa-doraemon);
+}
+
 
 .navbar-nav .nav-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .navbar-nav {
