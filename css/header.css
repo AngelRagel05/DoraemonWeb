@@ -9,6 +9,7 @@ header {
     font-size: x-large;
     font-weight: bold;
     color: white !important;
+    padding-bottom: 0.3em;
 }
 
 .navbar-nav {
