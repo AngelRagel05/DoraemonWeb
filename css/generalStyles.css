@@ -90,3 +90,7 @@ body {
     margin: 0;
     padding: 1em;
 }
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
