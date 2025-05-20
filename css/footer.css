@@ -49,15 +49,15 @@ footer .padding-footer {
 --------------------------------------------- */
 
 .bg-instagram {
-    background-color: #1877f2; /* Azul Instagram (ajustado) */
+    background-color: #1877f2 !important; /* Azul Instagram (ajustado) */
 }
 
 .bg-youtube {
-    background-color: #ff0000; /* Rojo YouTube */
+    background-color: #ff0000 !important; /* Rojo YouTube */
 }
 
 .bg-tiktok {
-    background-color: #000000; /* Negro TikTok */
+    background-color: #000000 !important; /* Negro TikTok */
 }
 
 /* ---------------------------------------------
