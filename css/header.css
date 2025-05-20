@@ -34,15 +34,27 @@ nav img:hover {
     transform: scale(1.2);
 }
 
-/* Posicionamiento y tamaño del logo */
+/* Imagen grande y posicionada solo en pantallas grandes */
 #Doraemon_Nav {
     z-index: 5;
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 2.5%;
     height: 110%;
     width: auto;
 }
+
+/* Para pantallas pequeñas: reseteamos la imagen */
+@media (max-width: 991.98px) {
+    #Doraemon_Nav {
+        position: static;
+        height: 60px;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+}
+
 
 /* ---------------------------------------------
    ESTILO BÁSICO DE ENLACES DE NAVEGACIÓN
