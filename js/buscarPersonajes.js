@@ -16,5 +16,6 @@ function filtrarTabla() {
         });
 
         fila.style.display = textoFila.includes(input) ? "" : "none";
+        
     });
 }
