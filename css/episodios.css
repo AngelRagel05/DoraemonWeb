@@ -5,5 +5,25 @@
 --------------------------------------------- */
 
 .hover-effect:hover {
-  background-color: #dddddd; /* Fondo gris claro al pasar el cursor */
+  /* Fondo gris claro al pasar el cursor */
+  background-color: #dddddd;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-animate {
+  opacity: 0;
+  animation-name: fadeSlideUp;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
