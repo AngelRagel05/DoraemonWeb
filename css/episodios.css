@@ -1,5 +1,9 @@
 @import url(css/generalStyle.css);
 
+/* ---------------------------------------------
+   EFECTO HOVER GENERAL
+--------------------------------------------- */
+
 .hover-effect:hover {
-  background-color: #dddddd;
+  background-color: #dddddd; /* Fondo gris claro al pasar el cursor */
 }

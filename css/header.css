@@ -1,5 +1,9 @@
 @import url(css/generalStyle.css);
 
+/* ---------------------------------------------
+   ESTRUCTURA GENERAL DEL HEADER Y NAVBAR
+--------------------------------------------- */
+
 header {
     background-color: var(--gris-footer);
     font-size: x-large;
@@ -7,17 +11,29 @@ header {
     color: white !important;
 }
 
-/* ESTILO PARA CASCABEL */
+.navbar-nav {
+    align-items: center;
+}
 
-/* Zoom en el Hover */
+.navbar-nav .nav-item {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* ---------------------------------------------
+   ESTILO DEL LOGO / CASCABEL (imagen)
+--------------------------------------------- */
+
+/* Zoom al hacer hover */
 nav img {
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 nav img:hover {
     transform: scale(1.2);
 }
 
-/* Tamaño img */
+/* Posicionamiento y tamaño del logo */
 #Doraemon_Nav {
     z-index: 5;
     position: absolute;
@@ -27,92 +43,18 @@ nav img:hover {
     width: auto;
 }
 
-/* MENU NAV */
-
-/* Estilo para que el menu se agrande */
-nav li {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-nav li:hover {
-    color: var(--amarillo-doraemon);
-    transform: scale(1.2);
-}
+/* ---------------------------------------------
+   ESTILO BÁSICO DE ENLACES DE NAVEGACIÓN
+--------------------------------------------- */
 
 nav .nav-link {
     color: white !important;
     position: relative;
-    transition: color 0.3s;
     font-family: 'Comic Neue', cursive;
+    transition: color 0.3s;
 }
 
-/* COLORES FIJOS PARA ITEM ACTIVO */
-
-.navbar-nav .nav-item:nth-child(1) .nav-link.active {
-    color: var(--azul-doraemon) !important;
-}
-
-.navbar-nav .nav-item:nth-child(2) .nav-link.active {
-    color: var(--rojo-doraemon) !important;
-}
-
-.navbar-nav .nav-item:nth-child(3) .nav-link.active {
-    color: var(--amarillo-doraemon) !important;
-}
-
-.navbar-nav .nav-item:nth-child(4) .nav-link.active {
-    color: var(--rosa-doraemon) !important;
-}
-
-.navbar-nav .nav-item:nth-child(1) .nav-link.active::after {
-    width: 80%;
-    background-color: var(--azul-doraemon);
-}
-.navbar-nav .nav-item:nth-child(2) .nav-link.active::after {
-    width: 80%;
-    background-color: var(--rojo-doraemon);
-}
-.navbar-nav .nav-item:nth-child(3) .nav-link.active::after {
-    width: 80%;
-    background-color: var(--amarillo-doraemon);
-}
-.navbar-nav .nav-item:nth-child(4) .nav-link.active::after {
-    width: 80%;
-    background-color: var(--rosa-doraemon);
-}
-
-.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
-    color: var(--azul-doraemon) !important;
-}
-.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
-    color: var(--rojo-doraemon) !important;
-}
-.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
-    color: var(--amarillo-doraemon) !important;
-}
-.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
-    color: var(--rosa-doraemon) !important;
-}
-
-.navbar-nav .nav-item:nth-child(1) .nav-link:hover::after {
-    width: 80%;
-    background-color: var(--azul-doraemon);
-}
-.navbar-nav .nav-item:nth-child(2) .nav-link:hover::after {
-    width: 80%;
-    background-color: var(--rojo-doraemon);
-}
-.navbar-nav .nav-item:nth-child(3) .nav-link:hover::after {
-    width: 80%;
-    background-color: var(--amarillo-doraemon);
-}
-.navbar-nav .nav-item:nth-child(4) .nav-link:hover::after {
-    width: 80%;
-    background-color: var(--rosa-doraemon);
-}
-
-
-
+/* Línea animada debajo del enlace (por defecto, oculta) */
 nav .nav-link::after {
     content: "";
     position: absolute;
@@ -123,14 +65,63 @@ nav .nav-link::after {
     transition: width 0.3s, background-color 0.3s;
 }
 
-
-
-
-.navbar-nav .nav-item {
-    margin-left: 60px;
-    margin-right: 60px;
+/* Efecto de escala al pasar el ratón por cualquier <li> */
+nav li {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.navbar-nav {
-    align-items: center;
+nav li:hover {
+    transform: scale(1.2);
+}
+
+/* ---------------------------------------------
+   COLORES POR ITEM (ACTIVO Y HOVER)
+--------------------------------------------- */
+
+/* ITEM 1 - INICIO */
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(1) .nav-link.active {
+    color: var(--azul-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover::after,
+.navbar-nav .nav-item:nth-child(1) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--azul-doraemon);
+}
+
+/* ITEM 2 - PERSONAJES */
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(2) .nav-link.active {
+    color: var(--rojo-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover::after,
+.navbar-nav .nav-item:nth-child(2) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--rojo-doraemon);
+}
+
+/* ITEM 3 - EPISODIOS */
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(3) .nav-link.active {
+    color: var(--amarillo-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover::after,
+.navbar-nav .nav-item:nth-child(3) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--amarillo-doraemon);
+}
+
+/* ITEM 4 - JUEGOS */
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover,
+.navbar-nav .nav-item:nth-child(4) .nav-link.active {
+    color: var(--rosa-doraemon) !important;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover::after,
+.navbar-nav .nav-item:nth-child(4) .nav-link.active::after {
+    width: 80%;
+    background-color: var(--rosa-doraemon);
 }
