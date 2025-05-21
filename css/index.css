@@ -11,10 +11,10 @@
 }
 
 /* Películas: tamaño automático, borde blanco (sin grosor) */
-#img-peliculas {
+#img_peliculas {
     height: auto;
     width: auto;
-    border: rgb(255, 255, 255); /* No especifica grosor ni estilo, no se ve */
+    border: 15px solid rgb(255, 255, 255);
 }
 
 /* ---------------------------------------------
@@ -70,4 +70,32 @@
 /* Contenedor de películas con margen inferior */
 #peliculas {
     margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    .carousel-item .img-peliculas {
+        width: 90% !important;   /* Imagen más grande y centrada */
+        height: auto;
+        margin: 0 auto !important;
+        display: block;
+    }
+
+    .carousel-item .fondo-pelicula {
+        width: 90% !important; /* Que el fondo del texto tenga el mismo ancho que la imagen */
+        margin-top: 1em; /* Centrarlo */
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        background: var(--fondo-tarjetas);
+        text-align: center;
+    }
+
+    .carousel-item .fondo-pelicula h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-item .fondo-pelicula p {
+        font-size: 1rem;
+    }
 }
