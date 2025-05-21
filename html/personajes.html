@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../css/personajes.css">
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.bundle.js" defer></script>
-    <script src="js/buscarPersonajes.js" defer></script>
+    <script src="../js/bootstrap.bundle.js" defer></script>
+    <script src="../js/buscarPersonajes.js" defer></script>
+    <script src="../js/audioPersonaje.js" defer></script>
 
     <!-- Fuentes Textos -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -50,9 +51,8 @@
 
     <!-- !  Main  -->
     <main>
+        <h1 class="h1-font-Baloo">Personajes Principales de Doraemon</h1>
         <div class="container py-4">
-            <h1 class="h1-font-Baloo">Personajes Principales de Doraemon</h1>
-
             <!-- ? Personajes Principales -->
             <div class="row row-cols-1 row-cols-lg-2 g-4">
 
@@ -69,7 +69,10 @@
                                 inventos.</p>
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
-                            <a href="#" class="btn btn-outline-primary btn-sm">Ver más</a>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalDoraemon">
+                                Ver más
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -87,13 +90,17 @@
                                 líos.</p>
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
-                            <a href="#" class="btn btn-outline-warning btn-sm">Ver más</a>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalNobita">
+                                Ver más
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- ? Personajes Secundarios -->
+        </div>
+        <!-- ? Personajes Secundarios -->
+        <div class="container py-4">
             <h2 class="h1-font-Baloo">Personajes Secundarios</h2>
             <div class="row row-cols-1 row-cols-lg-3 g-4">
                 <!-- * Shizuka -->
@@ -108,7 +115,10 @@
                                 violín.</p>
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
-                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalShizuka">
+                                Ver más
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -125,8 +135,11 @@
                             <p class="card-text">Presumido y algo manipulador, siempre quiere lucirse frente
                                 a los demás.</p>
                         </div>
-                        <div class="card-footer text-center bg-light ">
-                            <a href="#" class="btn btn-outline-success btn-sm">Ver más</a>
+                        <div class="card-footer text-center bg-light rounded-bottom-4">
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalSuneo">
+                                Ver más
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -143,127 +156,236 @@
                                 amable.</p>
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
-                            <a href="#" class="btn btn-outline-danger btn-sm">Ver más</a>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalGigante">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ? Personajes Resto Secundarios -->
+        <div class="container my-5">
+            <h2 class="h1-font-Baloo text-center mb-4">Personajes Secundarios de Doraemon</h2>
+
+            <!-- Bucador Dinámico -->
+            <div class="mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="Buscar personajes..."
+                    onkeyup="filtrarTabla()">
+            </div>
+            <div class="table-responsive rounded-4 shadow">
+                <table class="table table-hover table-bordered align-middle mb-0">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Primera Aparición</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dorami</td>
+                            <td>Hermana menor de Doraemon, más inteligente y responsable.</td>
+                            <td>1973</td>
+                            <td class=" text-info text-center bg-personajes">
+                                <img src="../assets/img/Personajes/Dorami-P.webp" alt="Dorami" class="img-thumbnail"
+                                    style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jaiko Goda</td>
+                            <td>Hermana de Gigante, aspira a ser mangaka.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Jaiko-Goda-P.webp" alt="Jaiko Goda"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hidetoshi Dekisugi</td>
+                            <td>Compañero de clase de Nobita, inteligente y amable.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Hidetoshi-Dekisugi-P.webp" alt="Hidetoshi Dekisugi"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sewashi Nobi</td>
+                            <td>Tataranieto de Nobita, envía a Doraemon al pasado para ayudarlo.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Sewashi-Nobi-P.webp" alt="Sewashi Nobi"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sensei</td>
+                            <td>Profesor de Nobita, estricto pero preocupado por sus alumnos.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Sensei-P.webp" alt="Sensei" class="img-thumbnail"
+                                    style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Michiko Minamoto</td>
+                            <td>Madre de Shizuka, amable y preocupada por la educación de su hija.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Michiko-Minamoto-P.webp" alt="Michiko Minamoto"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Señora Goda</td>
+                            <td>Madre de Gigante, fuerte y respetada, mantiene a raya a su hijo.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Señora-Goda-P.webp" alt="Señora Goda"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Señora Honekawa</td>
+                            <td>Madre de Suneo, elegante y orgullosa de su estatus social.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Señora-Honekawa-P.webp" alt="Señora Honekawa"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pak Kaminari</td>
+                            <td>Vecino anciano que a menudo se enfada cuando los niños juegan cerca de su casa.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Pak-Kaminari-P.webp" alt="Pak Kaminari"
+                                    class="img-thumbnail" style="max-height: 70px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mii-chan</td>
+                            <td>Gata blanca que es el interés amoroso de Doraemon.</td>
+                            <td>1973</td>
+                            <td class="text-center">
+                                <img src="../assets/img/Personajes/Mii-chan-P.webp" alt="Mii-chan" class="img-thumbnail"
+                                    style="max-height: 70px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ? Modales de Personaje Principales y Secundarios -->
+        <!-- Modal Doraemon -->
+        <div>
+            <div class="modal fade" id="modalDoraemon" tabindex="-1" aria-labelledby="modalDoraemonLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title" id="modalDoraemonLabel">Doraemon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Doraemon es un gato cósmico del siglo XXII. Viene del futuro para ayudar a Nobita a
+                                cambiar
+                                su destino. Usa gadgets increíbles como la Puerta Mágica o el Báculo de Bambú.</p>
+                            <img src="assets/img/doraemon_extra.png" alt="Doraemon" class="img-fluid rounded">
+                        </div>
+                        <audio id="audioDoraemon" src=""></audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Nobita -->
+            <div class="modal fade" id="modalNobita" tabindex="-1" aria-labelledby="modalNobitaLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger text-white">
+                            <h5 class="modal-title" id="modalNobitaLabel">Nobita Nobi</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Nobita es amable, flojo y soñador. Saca malas notas, pero tiene un gran corazón. Gracias
+                                a
+                                Doraemon, vive aventuras y sueña con casarse con Shizuka.</p>
+                            <img src="assets/img/nobita_extra.png" alt="Nobita" class="img-fluid rounded">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ? Personajes Resto Secundarios -->
-            <div class="container my-5">
-                <h2 class="h1-font-Baloo text-center mb-4">Personajes Secundarios de Doraemon</h2>
-
-                <!-- Bucador Dinámico -->
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar personajes..."
-                        onkeyup="filtrarTabla()">
+            <!-- Modal Shizuka -->
+            <div class="modal fade" id="modalShizuka" tabindex="-1" aria-labelledby="modalShizukaLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning text-dark">
+                            <h5 class="modal-title" id="modalShizukaLabel">Shizuka Minamoto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Shizuka es inteligente, amable y le encanta tocar el violín (aunque no lo hace muy bien).
+                                Es
+                                el amor platónico de Nobita y suele acompañarlo en sus aventuras.</p>
+                            <img src="assets/img/shizuka_extra.png" alt="Shizuka" class="img-fluid rounded">
+                        </div>
+                        <audio src=""></audio>
+                    </div>
                 </div>
-                <div class="table-responsive rounded-4 shadow">
-                    <table class="table table-hover table-bordered align-middle mb-0">
-                        <thead class="text-center">
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Primera Aparición</th>
-                                <th>Imagen</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dorami</td>
-                                <td>Hermana menor de Doraemon, más inteligente y responsable.</td>
-                                <td>1973</td>
-                                <td class=" text-info text-center bg-personajes">
-                                    <img src="../assets/img/Personajes/Dorami-P.webp" alt="Dorami" class="img-thumbnail"
-                                        style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Jaiko Goda</td>
-                                <td>Hermana de Gigante, aspira a ser mangaka.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Jaiko-Goda-P.webp" alt="Jaiko Goda"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Hidetoshi Dekisugi</td>
-                                <td>Compañero de clase de Nobita, inteligente y amable.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Hidetoshi-Dekisugi-P.webp"
-                                        alt="Hidetoshi Dekisugi" class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sewashi Nobi</td>
-                                <td>Tataranieto de Nobita, envía a Doraemon al pasado para ayudarlo.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Sewashi-Nobi-P.webp" alt="Sewashi Nobi"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sensei</td>
-                                <td>Profesor de Nobita, estricto pero preocupado por sus alumnos.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Sensei-P.webp" alt="Sensei" class="img-thumbnail"
-                                        style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Michiko Minamoto</td>
-                                <td>Madre de Shizuka, amable y preocupada por la educación de su hija.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Michiko-Minamoto-P.webp" alt="Michiko Minamoto"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Señora Goda</td>
-                                <td>Madre de Gigante, fuerte y respetada, mantiene a raya a su hijo.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Señora-Goda-P.webp" alt="Señora Goda"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Señora Honekawa</td>
-                                <td>Madre de Suneo, elegante y orgullosa de su estatus social.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Señora-Honekawa-P.webp" alt="Señora Honekawa"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Pak Kaminari</td>
-                                <td>Vecino anciano que a menudo se enfada cuando los niños juegan cerca de su casa.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Pak-Kaminari-P.webp" alt="Pak Kaminari"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mii-chan</td>
-                                <td>Gata blanca que es el interés amoroso de Doraemon.</td>
-                                <td>1973</td>
-                                <td class="text-center">
-                                    <img src="../assets/img/Personajes/Mii-chan-P.webp" alt="Mii-chan"
-                                        class="img-thumbnail" style="max-height: 70px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <!-- Modal Gigante -->
+            <div class="modal fade" id="modalGigante" tabindex="-1" aria-labelledby="modalGiganteLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success text-white">
+                            <h5 class="modal-title" id="modalGiganteLabel">Takeshi "Gigante" Gouda</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Gigante es fuerte y temido por sus amigos. Le encanta cantar, aunque lo hace fatal.
+                                Aunque
+                                parezca rudo, en el fondo se preocupa por sus amigos.</p>
+                            <img src="assets/img/gigante_extra.png" alt="Gigante" class="img-fluid rounded">
+                        </div>
+                        <audio src=""></audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Suneo -->
+            <div class="modal fade" id="modalSuneo" tabindex="-1" aria-labelledby="modalSuneoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title" id="modalSuneoLabel">Suneo Honekawa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Suneo es presumido y le gusta alardear de sus juguetes y viajes. Siempre está con
+                                Gigante,
+                                pero también se une a Nobita y los demás cuando hay aventura.</p>
+                            <img src="assets/img/suneo_extra.png" alt="Suneo" class="img-fluid rounded">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <!-- ! Footer -->
@@ -283,7 +405,8 @@
                     class="btn btn-circle bg-instagram mb-3"><i class="fab fa-instagram"></i></a><br>
                 <a href="https://www.youtube.com/@doraemon" target="_blank" class="btn btn-circle bg-youtube mb-3"><i
                         class="fab fa-youtube"></i></a><br>
-                <a href="twitter.com/Doraemon_es_" target="_blank" class="btn btn-circle bg-tiktok"><i class="fab fa-twitter"></i></a>
+                <a href="twitter.com/Doraemon_es_" target="_blank" class="btn btn-circle bg-tiktok"><i
+                        class="fab fa-twitter"></i></a>
             </div>
 
             <!-- ? Derechos -->

@@ -1,10 +1,6 @@
-/* ---------------------------------------------
-   FUENTES Y COLORES
---------------------------------------------- */
-
-/* Importa la fuente Baloo 2 de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
-
+/*! ============================= */
+/*! 🎨 PALETA DE COLORES Y FUENTES */
+/*! ============================= */
 /* Variables CSS con la paleta de colores */
 :root {
     /* Colores principales */
@@ -35,27 +31,17 @@
     background-color: var(--rosa-shisuka) !important;
 }
 
-/* ---------------------------------------------
-   TIPOGRAFÍA
---------------------------------------------- */
-
-/* Clase para títulos h1 con fuente Poppins */
-.h1-font-Baloo {
+/*! ============================= */
+/*! 🔤 TIPOGRAFÍA PERSONALIZADA */
+/*! ============================= */
+.font-Poppins {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.1;
-    text-transform: none;
-    color: #f0f8ff;
-    margin: 0;
-    padding: 1rem;
-    text-align: center;
 }
 
-/* ---------------------------------------------
-   ESTILO GENERAL DEL BODY
---------------------------------------------- */
 
+/*! ============================= */
+/*! 🖼️ ESTILO GENERAL DEL BODY */
+/*! ============================= */
 body {
     color: var(--blanco-texto);
     background: url(../assets/img/Background/Fondo2.png);
@@ -65,14 +51,39 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ---------------------------------------------
-   DIMENSIONES PARA IMÁGENES DE TARJETAS
---------------------------------------------- */
+h1 {
+    padding: 1rem;
+    background-color: #ffffff65;
+    border-block: 2px solid var(--negro);
+    text-align: center;
+}
 
+h2 {
+    
+    width: 100%;
+    max-width: 80%;
+    margin: 2rem auto 1rem auto;
+    padding: 0.8rem 1.2rem;
+    background-color: #ffffff30;
+    backdrop-filter: blur(3px);
+    border-block: 2px solid var(--amarillo-doraemon);
+    border-inline: 4px solid var(--azul-doraemon);
+    ;
+    border-radius: 12px;
+    color: var(--negro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*! ============================= */
+/*! 📏 DIMENSIONES DE IMÁGENES */
+/*! ============================= */
 /* Imagen grande, evita deformaciones y limita tamaño */
 .card-img-lg-dimension {
     display: block;
-    object-fit: contain; /* Mantiene proporción sin recortar */
+    object-fit: contain;
+    /* Mantiene proporción sin recortar */
     max-height: 500px;
     max-width: 100%;
     width: auto;

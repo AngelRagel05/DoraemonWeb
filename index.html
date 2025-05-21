@@ -50,216 +50,236 @@
 
     <!-- ! Main -->
     <main class="container mt-4">
-        <section id="inicio">
-            <h1 class="text-center">¡Bienvenido al mundo de Doraemon!</h1>
+
+        <h1 class="text-center">¡Bienvenido al mundo de Doraemon!</h1>
+
+        <div>
+
             <p class="lead text-center">Explora todo sobre tu gato cósmico favorito.</p>
-        </section>
 
 
-        <section id="imagenes" class="">
-            <h2 class="text-center fw-bolder"></h2>
-            <div id="doraemonCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+            <section id="imagenes" class="">
 
-                <!-- Carrusel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/img/Index/Carrusel/Doraemon_Nobita.png" id="img_carrusel"
-                            class="d-block w-100 rounded-5 border" alt="Doraemon_Nobita">
+                <div id="doraemonCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+
+                    <!-- Carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/Index/Carrusel/Doraemon_Nobita.png" id="img_carrusel"
+                                class="d-block w-100 rounded-5 border" alt="Doraemon_Nobita">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/img/Index/Carrusel/Doraemon_Amigos.png" id="img_carrusel"
+                                class="d-block w-100 rounded-5 border" alt="Doraemon_Amigos">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/img/Index/Carrusel/Doraemon_Inventos.png" id="img_carrusel"
+                                class="d-block w-100 rounded-5 border" alt="Doraemon_Inventos">
+                        </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="assets/img/Index/Carrusel/Doraemon_Amigos.png" id="img_carrusel"
-                            class="d-block w-100 rounded-5 border" alt="Doraemon_Amigos">
-                    </div>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#doraemonCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
 
-                    <div class="carousel-item">
-                        <img src="assets/img/Index/Carrusel/Doraemon_Inventos.png" id="img_carrusel"
-                            class="d-block w-100 rounded-5 border" alt="Doraemon_Inventos">
-                    </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#doraemonCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
+            </section>
 
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#doraemonCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
+            <div class="container my-5">
+                <div class="row d-flex align-items-stretch">
+                    <!-- ? Sinopsis -->
+                    <section id="sinopsis" class="col-md-6 mb-4 d-flex">
+                        <div id="sinopsis-box" class="w-100 h-100">
+                            <h2 class="text-center fw-bolder">Sinopsis</h2>
+                            <p class="text-start">
+                                Doraemon es un gato robot del futuro que viaja al pasado para ayudar a Nobita Nobi, un
+                                chico
+                                con muy mala suerte y cero habilidades para la vida. Enviado por un descendiente de
+                                Nobita
+                                para
+                                evitar que su familia acabe en la ruina, Doraemon llega con un bolsillo mágico lleno de
+                                inventos alucinantes del siglo XXII. Aunque Nobita mete la pata casi siempre que usa los
+                                gadgets,
+                                cada episodio mezcla humor, caos y alguna que otra lección sobre la vida. <br><br>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#doraemonCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                                Con la ayuda de amigos como Shizuka, el matón Gigante y el presumido Suneo, el grupo
+                                vive
+                                todo
+                                tipo de aventuras: desde viajes en el tiempo hasta misiones espaciales o mundos
+                                paralelos.
+                                La serie es conocida por su creatividad, sus situaciones absurdas y ese toque tierno que
+                                hace
+                                que tanto niños como adultos conecten con sus personajes. <br><br>
+
+                                Más que un simple dibujo animado, Doraemon es un clásico del anime que lleva
+                                generaciones
+                                enseñando que con un poco de ayuda (y a veces un aparato raro), cualquier problema se
+                                puede
+                                superar.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- ? Curiosidades -->
+                    <section id="curiosidades" class="col-md-6 mb-4 d-flex">
+                        <div id="curiosidades-box" class="w-100 h-100">
+                            <h2 class="text-center fw-bolder">Curiosidades</h2>
+                            <ul class="list-unstyled">
+                                <li>La serie de Doraemon ha sido emitida en más de 35 países y ha sido traducida a más
+                                    de 30
+                                    idiomas.</li>
+                                <li>Doraemon originalmente era amarillo y tenía orejas.</li>
+                                <li>La serie original comenzó a publicarse en 1969 y ha tenido múltiples adaptaciones en
+                                    anime y cine.</li>
+                                <li>El miedo más grande de Doraemon son los ratones, porque perdió sus orejas por culpa
+                                    de
+                                    uno.</li>
+                                <li>Nobita puede dormir en menos de 3 segundos, según datos oficiales.</li>
+                                <li>El bolsillo de Doraemon es "cuatridimensional" y puede guardar literalmente
+                                    cualquier
+                                    cosa.</li>
+                                <li>Existe un museo dedicado solo a Doraemon en Kawasaki, Japón.</li>
+                                <li>En Japón, Doraemon es considerado un "embajador cultural del anime".</li>
+                                <li>Algunos episodios y películas tienen referencias a ciencia real, viajes en el tiempo
+                                    y
+                                    dilemas morales.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
 
-        <div class="container my-5">
-            <div class="row d-flex align-items-stretch">
-                <!-- ? Sinopsis -->
-                <section id="sinopsis" class="col-md-6 mb-4 d-flex">
-                    <div id="sinopsis-box" class="w-100 h-100">
-                        <h2 class="text-center fw-bolder">Sinopsis</h2>
-                        <p class="text-start">
-                            Doraemon es un gato robot del futuro que viaja al pasado para ayudar a Nobita Nobi, un chico
-                            con muy mala suerte y cero habilidades para la vida. Enviado por un descendiente de Nobita
-                            para
-                            evitar que su familia acabe en la ruina, Doraemon llega con un bolsillo mágico lleno de
-                            inventos alucinantes del siglo XXII. Aunque Nobita mete la pata casi siempre que usa los
-                            gadgets,
-                            cada episodio mezcla humor, caos y alguna que otra lección sobre la vida. <br><br>
 
-                            Con la ayuda de amigos como Shizuka, el matón Gigante y el presumido Suneo, el grupo vive
-                            todo
-                            tipo de aventuras: desde viajes en el tiempo hasta misiones espaciales o mundos paralelos.
-                            La serie es conocida por su creatividad, sus situaciones absurdas y ese toque tierno que
-                            hace
-                            que tanto niños como adultos conecten con sus personajes. <br><br>
+            <!-- ? Peliculas -->
+            <section id="peliculas">
+                <h2 class="text-center fw-bolder">Películas</h2>
 
-                            Más que un simple dibujo animado, Doraemon es un clásico del anime que lleva generaciones
-                            enseñando que con un poco de ayuda (y a veces un aparato raro), cualquier problema se puede
-                            superar.
-                        </p>
+                <div id="peliculasCarousel" class="carousel slide rounded-5" data-bs-ride="carousel"
+                    data-bs-interval="5000">
+                    <div class="carousel-inner">
+
+                        <!-- Película 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img src="assets/img/Index/Peliculas/ElGladiador.png"
+                                    class="w-25 rounded-5 me-4 img-peliculas border" alt="El Gladiador"
+                                    id="img_pelicula">
+                                <div class="text-start w-50 fondo-pelicula">
+                                    <h4 class="fw-bold">El Gladiador</h4>
+                                    <p>
+                                        Durante una excursión escolar, Nobita encuentra un antiguo casco que lo
+                                        transporta
+                                        al Coliseo romano. Allí deberá enfrentarse en batallas simuladas, mientras
+                                        descubre
+                                        una conspiración que amenaza con alterar la historia del Imperio. Doraemon y sus
+                                        amigos se unen para rescatarlo antes de que quede atrapado en el pasado para
+                                        siempre.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Película 2 -->
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img src="assets/img/Index/Peliculas/ElPequeñoDinosaurio.png"
+                                    class="w-25 rounded-5 me-4 img-peliculas border" alt="El Pequeño Dinosaurio"
+                                    id="img_pelicula">
+                                <div class="text-start w-50 fondo-pelicula">
+                                    <h4 class="fw-bold">El Pequeño Dinosaurio</h4>
+                                    <p>
+                                        Tras encontrar un extraño huevo en un viaje escolar, Nobita cuida a un pequeño
+                                        dinosaurio que accidentalmente lleva al presente. Mientras lo protegen de
+                                        científicos que quieren capturarlo, Doraemon y sus amigos deberán buscar la
+                                        forma de
+                                        devolverlo a su época antes de alterar la línea temporal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Película 3 -->
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img src="assets/img/Index/Peliculas/ElTrenDelTiempo.png"
+                                    class="w-25 rounded-5 me-4 img-peliculas border" alt="El Tren Del Tiempo"
+                                    id="img_pelicula">
+                                <div class="text-start w-50 fondo-pelicula">
+                                    <h4 class="fw-bold">El Tren Del Tiempo</h4>
+                                    <p>
+                                        Mientras exploran una estación abandonada, Nobita y sus amigos descubren un tren
+                                        capaz de viajar en el tiempo. Cada parada los lleva a una época diferente, pero
+                                        un
+                                        error en el trayecto amenaza con deshacer el presente. Deberán corregir la ruta
+                                        antes de quedar atrapados entre dimensiones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Película 4 -->
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img src="assets/img/Index/Peliculas/LaFabricaDeJuguetes.png"
+                                    class="w-25 rounded-5 me-4 img-peliculas border" alt="La Fabrica De Juguetes"
+                                    id="img_pelicula">
+                                <div class="text-start w-50 fondo-pelicula">
+                                    <h4 class="fw-bold">La Fabrica De Juguetes</h4>
+                                    <p>
+                                        Nobita encuentra una antigua fábrica abandonada que, con ayuda de Doraemon,
+                                        vuelve a
+                                        funcionar. Sin embargo, los juguetes fabricados cobran conciencia y se rebelan
+                                        contra los humanos. El grupo deberá detenerlos antes de que se apoderen del
+                                        mundo
+                                        real en plena Navidad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Película 5 -->
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img src="assets/img/Index/Peliculas/LosDiosesDelViento.png"
+                                    class="w-25 rounded-5 me-4 img-peliculas border" alt="Los Dioses del Viento"
+                                    id="img_pelicula">
+                                <div class="text-start w-50 fondo-pelicula">
+                                    <h4 class="fw-bold">Los Dioses del Viento</h4>
+                                    <p>
+                                        Una antigua leyenda cobra vida cuando Nobita libera por error a los dioses del
+                                        viento. Deberán enfrentarlos en el mundo espiritual antes de que desaten una
+                                        tormenta eterna.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
 
-                <!-- ? Curiosidades -->
-                <section id="curiosidades" class="col-md-6 mb-4 d-flex">
-                    <div id="curiosidades-box" class="w-100 h-100">
-                        <h2 class="text-center fw-bolder">Curiosidades</h2>
-                        <ul class="list-unstyled">
-                            <li>La serie de Doraemon ha sido emitida en más de 35 países y ha sido traducida a más de 30
-                                idiomas.</li>
-                            <li>Doraemon originalmente era amarillo y tenía orejas.</li>
-                            <li>La serie original comenzó a publicarse en 1969 y ha tenido múltiples adaptaciones en
-                                anime y cine.</li>
-                            <li>El miedo más grande de Doraemon son los ratones, porque perdió sus orejas por culpa de
-                                uno.</li>
-                            <li>Nobita puede dormir en menos de 3 segundos, según datos oficiales.</li>
-                            <li>El bolsillo de Doraemon es "cuatridimensional" y puede guardar literalmente cualquier
-                                cosa.</li>
-                            <li>Existe un museo dedicado solo a Doraemon en Kawasaki, Japón.</li>
-                            <li>En Japón, Doraemon es considerado un "embajador cultural del anime".</li>
-                            <li>Algunos episodios y películas tienen referencias a ciencia real, viajes en el tiempo y
-                                dilemas morales.</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#peliculasCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#peliculasCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
         </div>
-
-
-        <!-- ? Peliculas -->
-        <section id="peliculas">
-            <h2 class="text-center fw-bolder">Películas</h2>
-
-            <div id="peliculasCarousel" class="carousel slide rounded-5" data-bs-ride="carousel"
-                data-bs-interval="5000">
-                <div class="carousel-inner">
-
-                    <!-- Película 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex align-items-center justify-content-center flex-wrap">
-                            <img src="assets/img/Index/Peliculas/ElGladiador.png"
-                                class="w-25 rounded-5 me-4 img-peliculas border" alt="El Gladiador" id="img_pelicula">
-                            <div class="text-start w-50 fondo-pelicula">
-                                <h4 class="fw-bold">El Gladiador</h4>
-                                <p>
-                                    Durante una excursión escolar, Nobita encuentra un antiguo casco que lo transporta
-                                    al Coliseo romano. Allí deberá enfrentarse en batallas simuladas, mientras descubre
-                                    una conspiración que amenaza con alterar la historia del Imperio. Doraemon y sus
-                                    amigos se unen para rescatarlo antes de que quede atrapado en el pasado para
-                                    siempre.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Película 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center flex-wrap">
-                            <img src="assets/img/Index/Peliculas/ElPequeñoDinosaurio.png"
-                                class="w-25 rounded-5 me-4 img-peliculas border" alt="El Pequeño Dinosaurio"
-                                id="img_pelicula">
-                            <div class="text-start w-50 fondo-pelicula">
-                                <h4 class="fw-bold">El Pequeño Dinosaurio</h4>
-                                <p>
-                                    Tras encontrar un extraño huevo en un viaje escolar, Nobita cuida a un pequeño
-                                    dinosaurio que accidentalmente lleva al presente. Mientras lo protegen de
-                                    científicos que quieren capturarlo, Doraemon y sus amigos deberán buscar la forma de
-                                    devolverlo a su época antes de alterar la línea temporal.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Película 3 -->
-                    <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center flex-wrap">
-                            <img src="assets/img/Index/Peliculas/ElTrenDelTiempo.png"
-                                class="w-25 rounded-5 me-4 img-peliculas border" alt="El Tren Del Tiempo"
-                                id="img_pelicula">
-                            <div class="text-start w-50 fondo-pelicula">
-                                <h4 class="fw-bold">El Tren Del Tiempo</h4>
-                                <p>
-                                    Mientras exploran una estación abandonada, Nobita y sus amigos descubren un tren
-                                    capaz de viajar en el tiempo. Cada parada los lleva a una época diferente, pero un
-                                    error en el trayecto amenaza con deshacer el presente. Deberán corregir la ruta
-                                    antes de quedar atrapados entre dimensiones.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Película 4 -->
-                    <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center flex-wrap">
-                            <img src="assets/img/Index/Peliculas/LaFabricaDeJuguetes.png"
-                                class="w-25 rounded-5 me-4 img-peliculas border" alt="La Fabrica De Juguetes"
-                                id="img_pelicula">
-                            <div class="text-start w-50 fondo-pelicula">
-                                <h4 class="fw-bold">La Fabrica De Juguetes</h4>
-                                <p>
-                                    Nobita encuentra una antigua fábrica abandonada que, con ayuda de Doraemon, vuelve a
-                                    funcionar. Sin embargo, los juguetes fabricados cobran conciencia y se rebelan
-                                    contra los humanos. El grupo deberá detenerlos antes de que se apoderen del mundo
-                                    real en plena Navidad.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Película 5 -->
-                    <div class="carousel-item">
-                        <div class="d-flex align-items-center justify-content-center flex-wrap">
-                            <img src="assets/img/Index/Peliculas/LosDiosesDelViento.png"
-                                class="w-25 rounded-5 me-4 img-peliculas border" alt="Los Dioses del Viento"
-                                id="img_pelicula">
-                            <div class="text-start w-50 fondo-pelicula">
-                                <h4 class="fw-bold">Los Dioses del Viento</h4>
-                                <p>
-                                    Una antigua leyenda cobra vida cuando Nobita libera por error a los dioses del
-                                    viento. Deberán enfrentarlos en el mundo espiritual antes de que desaten una
-                                    tormenta eterna.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#peliculasCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#peliculasCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </section>
     </main>
 
     <!-- ! Footer -->
