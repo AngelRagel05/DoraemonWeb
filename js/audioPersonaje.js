@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 function activarAudioModal(modalId, audioId) {
     const modal = document.getElementById(modalId);
     const audio = document.getElementById(audioId);
