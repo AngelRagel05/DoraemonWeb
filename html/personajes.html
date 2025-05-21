@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../css/personajes.css">
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.bundle.js" defer></script>
-    <script src="js/buscarPersonajes.js" defer></script>
+    <script src="../js/bootstrap.bundle.js" defer></script>
+    <script src="../js/buscarPersonajes.js" defer></script>
+    <script src="../js/audioPersonaje.js" defer></script>
 
     <!-- Fuentes Textos -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -90,9 +91,10 @@
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
                             <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
-                                data-bs-target="#modalNobita" onclick="playAudio('audioNobita')">
+                                data-bs-target="#modalNobita">
                                 Ver más
                             </button>
+                            <audio id="audioNobita" src="../assets/audio/audioNobita_recortado.mp3"></audio>
                         </div>
                     </div>
                 </div>
@@ -115,7 +117,7 @@
                         </div>
                         <div class="card-footer text-center bg-light rounded-bottom-4">
                             <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
-                                data-bs-target="#modalShizuka" >
+                                data-bs-target="#modalShizuka">
                                 Ver más
                             </button>
                         </div>
