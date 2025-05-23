@@ -1,23 +1,78 @@
-[Pagina Web (Pages)](https://angelragel05.github.io/DoraemonWeb/)
 
-# DoraemonWeb
+# 🌟 Página Web Temática de Doraemon
 
-Genral Styles podemos encontral el tamño de todo deberiamos ir utilizando para que olga se de cuenta que con tus herramientas y con la mias podemos crear coasa en conjunto 
+Este repositorio contiene una página web interactiva y visualmente atractiva basada en el universo de **Doraemon**, desarrollada como proyecto de la asignatura de **Lenguajes de Marcas**. El sitio está orientado a un público juvenil e incluye información sobre personajes, episodios, juegos, curiosidades y más.
 
-## Header
-// https://doraemon.lukinternacional.com/es//
-/*TODO Cambiar a sty*/
+## 🚀 Tecnologías Utilizadas
 
-## Footer 
-Cambiar el footer? Esta muy soso 
-Tengo un problema con la paleta de colores en el footer, nmc oscuro/blanco
-El z indesz es una putado en la forma reactiva 
+- **HTML5** y **CSS3**
+- **Bootstrap 5.0**
+- **JavaScript (modularizado en archivos separados)**
+- **Google Fonts y Font Awesome**
+- Repositorio Git + GitHub para control de versiones
 
-## Personaje
-Mejorarla muy basica, no se si por la falta de stripts o añadir mas personajes me justa  el foramto 2/3 de los personajes 1/1 para movil 
+## 🧩 Estructura de la Página
 
-## Episodios 
-Poner el ejemplo de alguno que pueda ser interesante busqueda rapida, despues un listado de en formato tabla de la primera temporado con un mensaje al final de seguientes temporadas en proceso foto de dorameon con casco de obra
+### 📄 Páginas Principales
 
-## Juegos 
-Acordeon para todas la imagens de lo juegos y siguiente cards para poder definirlo 
+- `index.html` – Página de inicio con sinopsis, curiosidades, carrusel de imágenes y películas.
+- `personajes.html` – Tabla interactiva con personajes secundarios, buscador y diseño con Bootstrap.
+- `episodios.html` – Listado de episodios destacados con modales explicativos.
+- `juegos.html` – Galería tipo acordeón + carrusel con mini-cards de DLCs y tarjeta principal actualizable dinámicamente.
+
+### 📁 Archivos CSS personalizados
+
+- `generalStyles.css` – Paleta de colores, fuentes y estilos globales.
+- `header.css` – Navegación con efecto de hover personalizado y colores únicos por sección.
+- `footer.css` – Diseño con botones circulares para redes sociales.
+- `index.css`, `personajes.css`, `episodios.css`, `juegos.css` – Estilos específicos por sección.
+
+### 🧠 Scripts JS
+
+- `buscarPersonajes.js` – Filtrado dinámico de personajes secundarios.
+- `scroll_Img.js` – Reducción animada del header tipo "hero" en scroll.
+- `update_main_card.js` – Cambio dinámico del contenido de la tarjeta principal de juegos según mini-card seleccionada.
+
+## 🎨 Características Destacadas
+
+- Diseño completamente responsive (pendiente de mejorar algunos detalles).
+- Uso extendido de componentes de Bootstrap 5.
+- Efectos personalizados en imágenes, tarjetas y botones.
+- Organización modular por sección (HTML, CSS, JS separados).
+- Favicon propio de Doraemon para mayor inmersión.
+- Paleta de colores adaptada a la estética de la serie (azul, rojo, amarillo y rosa Doraemon).
+
+## 📁 Estructura del Proyecto
+
+```
+/assets/img/...         → Imágenes utilizadas
+/css/                   → Hojas de estilo CSS personalizadas
+/js/                    → Scripts JavaScript por sección
+/html/                  → Páginas HTML secundarias
+index.html              → Página principal
+README.md               → Este archivo
+```
+
+## 📌 Público Objetivo
+
+La página está diseñada pensando en un público **joven o juvenil**, con elementos visuales llamativos, una navegación clara y contenido accesible, divertido y nostálgico para fans del anime.
+
+## 🧪 Próximas Mejoras
+
+- Implementar versión totalmente responsive en dispositivos móviles.
+- Añadir modo oscuro/claro.
+- Añadir localStorage para favoritos en personajes.
+- Mejorar SEO y accesibilidad (etiquetas ARIA, textos alternativos, etc.).
+
+---
+
+### 🔗 Referencias Inspiracionales
+
+- [Doraemon World Oficial](https://www.doraemon-world.com/)
+- [Luk Internacional - Doraemon](https://doraemon.lukinternacional.com/es/)
+- [Doraemon el Gato Cósmico](https://www.doraemonelgatocosmico.com/)
+
+---
+
+**Hecho con 💙 por Fran**  
+Proyecto para DAW - Lenguajes de Marcas
