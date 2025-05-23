@@ -121,7 +121,6 @@ La página está diseñada pensando en un público **joven o juvenil**, con elem
 ## 🧪 Próximas Mejoras
 
 - Implementar versión totalmente responsive en dispositivos móviles.
-- Añadir modo oscuro/claro.
 - Añadir localStorage para favoritos en personajes.
 - Mejorar SEO y accesibilidad (etiquetas ARIA, textos alternativos, etc.).
 
