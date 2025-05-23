@@ -79,8 +79,7 @@ header {
 .contenedor-DoraemonGamer {
     overflow: hidden;
     transition: height 0.2s ease-out;
-    border-bottom: var(--blanco-footer) 3px solid;
-
+    
     img {
         width: 100%;
         height: 500px;
